@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="title">Create Accounts</div>
+
+        <form oninput="result.value = slider.value">
+
+            <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">First Name *</span>
+                    <input type="text" placeholder="Enter Your FirstName" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Last Name *</span>
+                    <input type="text" placeholder="Enter Your LastName" required>
+                </div>
+            </div>
+
+            <div class="i-box">
+                <span class="details">Email *</span>
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Password *</span>
+                    <input type="password" placeholder="Enter Your Password" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Confirm Password *</span>
+                    <input type="text" placeholder="Confirm Your Password" required>
+                </div>
+            </div>
+
+            <div class="radio-details">
+                <div class="frst">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="g-title">Gender</span>
+                    <div class="category1">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="scnd">
+                    <input type="radio" name="hobbies" id="dot-3">
+                    <input type="radio" name="hobbies" id="dot-4">
+                    <input type="radio" name="hobbies" id="dot-5">
+                    <input type="radio" name="hobbies" id="dot-6">
+                    <span class="g-title">Hobbies</span>
+                    <div class="category2">
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Music</span>
+                        </label>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
+                            <span class="gender">Sports</span>
+                        </label>
+                        <label for="dot-5">
+                            <span class="dot five"></span>
+                            <span class="gender">Travel</span>
+                        </label>
+                        <label for="dot-6">
+                            <span class="dot six"></span>
+                            <span class="gender">Movies</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="user-details">
+                <div class="input-box">
+                    <div class="soi">
+                    <span class="details soi">Source of Income</span>
+                    <select>
+                        <option value="employed">Employed</option>
+                        <option value="buisness">Buisness</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="input-box ">
+
+                    <label for="income">Income</label>
+                    <div class="flx">
+                        <input type="range" id="slider" value="20k">
+                        <label for="slider" id="clr-one">
+                            <output name="result" for="slider">20</output>
+                            <span>k</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="inputs-box">
+                    <span class="details">Upload Profile Picture</span>
+                    <input type="file">
+                </div>
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="text" placeholder="Confirm Your Password" required>
+                </div>
+                <div class="iput-box">
+                    <span class="details">Bio</span>
+                    <textarea name="message" id="" cols="100" rows="5"></textarea>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="btn">
+            <input type="submit" value="Create">
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

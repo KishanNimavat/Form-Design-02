@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #0a5586, #43238b);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    /* padding: 25px 30px; */
+    border-radius: 10px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    background: #d8dfe2;
+    padding: 15px 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container form {
+    padding: 15px 30px 0 30px;
+    position: relative;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+
+
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    font-weight: 600;
+    color: #05a57d;
+
+}
+
+/* email css */
+.i-box input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.i-box .details {
+    font-weight: 600;
+    color: #05a57d;
+}
+
+
+.user-details .input-box input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+
+}
+
+/* upload profile picture */
+
+.user-details .inputs-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .inputs-box input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding-left: 5px;
+}
+
+
+.input-box .slide{
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .slide .inptt{
+    width: 100%;
+}
+
+.input-box .slide span{
+color: #05a57d;
+font-weight: 600;
+
+}
+/* source of income     */
+
+.user-details .input-box select {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+/* income css */
+
+.user-details .input-box label{
+    color: #05a57d;
+    font-weight: 600;
+}
+
+.user-details .input-box .flx{
+    display: flex;
+    color: #05a57d;
+}
+.user-details .input-box .flx label{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #05a57d;
+    border-radius: 6px;
+    width: 35px;
+}
+
+
+/* Bio css */
+
+.user-details .iput-box textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+
+.user-details .iput-box .details {
+    font-weight: 600;
+    color: #05a57d;
+}
+
+
+
+
+/* radio button css */
+
+.container form .radio-details {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 15px 0 20px 0;
+
+}
+
+.radio-details .g-title {
+    color: #05a57d;
+    font-weight: 600;
+}
+
+.radio-details .frst {
+    width: 47%;
+}
+
+form .radio-details .frst .category1 {
+    display: flex;
+}
+
+.radio-details .frst .category1 label {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.radio-details .frst .category1 .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category1 label .one,
+#dot-2:checked~.category1 label .two {
+    border-color: #d9d9d9;
+    background: #5f5763;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+.radio-details .scnd {
+    width: 47%;
+    position: absolute;
+    left: 53%;
+}
+
+
+
+form .radio-details .scnd .category2 {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-details .scnd .category2 label {
+    display: flex;
+    align-items: center;
+
+}
+
+.radio-details .scnd .category2 .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin-right: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+#dot-3:checked~.category2 label .three,
+#dot-4:checked~.category2 label .four,
+#dot-5:checked~.category2 label .five,
+#dot-6:checked~.category2 label .six {
+    border-color: #d9d9d9;
+    background: #5f5763;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* button css */
+.btn {
+    text-align: right;
+    background: #d8dfe2;
+    padding: 15px 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn input {
+    background: #05a57d;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+/* media query */
+
+@media screen and (max-width:769px) {}
+
+@media screen and (max-width:584px) {
+    .container {
+        max-width: 100%
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+   
+          
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .container form .radio-details {
+        display:block;
+        width: 100%;
+    }
+    .container form .radio-details .scnd{
+        left: 0;
+        margin:15px;
+    }
+    .user-details .input-box .soi{
+        margin-top: 12vw;
+    }
+   
+
+}
